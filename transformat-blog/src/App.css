@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --dark : #292128;
+  --light : #E9DAC2;
+  --text : 'Montserrat', sans-serif;
+  --title : 'UnifrakturMaguntia', cursive;;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--dark);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #0c080b;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--light);
+}
+nav{
+  height: 10vh;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.logo{
+  height: 5vh;
+  color: red;
+  margin-left: 5vw;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  margin-left: 55vw;
+  height: 10vh;
+  align-items: center;
+  
+  /* border: 2px solid blue; */
+}
+.nav-link{
+  text-decoration: none;
+  color: var(--dark);
+  font-family: var(--text);
+  letter-spacing: 5px;
+}
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'UnifrakturMaguntia', cursive; */
+
+
+
+
+.landing-section{
+  text-align: center;
+  height: 90vh;
+  background-image: url("Gradient.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 25vh;
+}
+.landing-title{
+  font-family: var(--title);
+  font-size: 7vw;
+}
+.landing-subtitle{
+  font-family: var(--text);
+  font-size: 1.5vw;
+  letter-spacing: 5px;
+}
+.scroll-icon{
+  height: 60px;
+  margin-top: 30vh;
+}
+.recent-title{
+  font-family: var(--text);
+  letter-spacing: 5px;
+  font-size: 2vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}

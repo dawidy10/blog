@@ -3,6 +3,7 @@ import {getDocs, collection} from 'firebase/firestore'
 import { db } from '../firebase-config'
 import scroll from '../Scroll.svg'
 
+
 function Home() {
     const postsCollectionRef = collection(db, "articole")
     const [postList, setpostList] = useState([]);
@@ -23,6 +24,11 @@ function Home() {
             </div>
             <div className="recent-posts">
                 <p className="recent-title">Ultimele articole.</p>
+                <div>
+                    {[...postList].reverse().slice(0,3).map((post) => {
+                        return <div>{post.title}</div>
+                    })}
+                </div>
             </div>         
             
             
@@ -32,6 +38,14 @@ function Home() {
                 return <div>{post.title}</div>
             })}
         </div> */}
+        <div className="footer">
+            <p className="insta-username">@transformatblog</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <p className="copyright">© transformat 2022</p>
+        </div>
         </div>
         
     )

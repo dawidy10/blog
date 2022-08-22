@@ -68,14 +68,31 @@ nav{
   color: white;
   padding-top: 25vh;
 }
+
+@keyframes text-fade{
+  from{
+    opacity: 0%;
+    padding-left: 3vw;
+  }
+  to{
+    opacity: 100%;
+    padding-left: 0;
+  }
+}
+
+
 .landing-title{
   font-family: var(--title);
-  font-size: 7vw;
+  font-size: 8vw;
+  animation-name: text-fade;
+  animation-duration: 2s;
 }
 .landing-subtitle{
   font-family: var(--text);
   font-size: 1.5vw;
   letter-spacing: 5px;
+  animation-name: text-fade;
+  animation-duration: 3s;
 }
 .scroll-icon{
   height: 60px;

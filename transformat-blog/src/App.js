@@ -3,7 +3,10 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from "./pages/Home"
 import CreatePost from './pages/CreatePost';
 import Login from './pages/Login';
-import logo from './Logo.svg'
+import logo from './Logo.svg';
+import blogicon from './blog-icon.svg';
+import abouticon from './about-icon.svg';
+import supporticon from './support-icon.svg';
 
 function App() {
   return (
@@ -14,6 +17,11 @@ function App() {
         <Link className="nav-link" to="/blog">BLOG</Link>
         <Link className="nav-link" to="/despre">DESPRE</Link>
         <Link className="nav-link" to="/sustine">SUSȚINE</Link>
+        </div>
+      <div className="nav-icons">
+        <Link className="nav-icon" to="/blog"><img src={blogicon} alt="blog"/></Link>
+        <Link className="nav-icon" to="/despre"><img src={abouticon} alt="blog"/></Link>
+        <Link className="nav-icon" to="/sustine"><img src={supporticon} alt="blog"/></Link>
         </div>
       </nav>
 

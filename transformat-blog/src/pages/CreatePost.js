@@ -7,9 +7,10 @@ function CreatePost() {
     let navigate = useNavigate();
     const [title, setTitle] = useState("")
     const [text, setText] = useState("")
+    const [image, setImage] = useState("")
     const postsCollectionRef = collection(db, "articole")
     const createPost = async () => {
-        await addDoc(postsCollectionRef, {title, text});
+        await addDoc(postsCollectionRef, {title, text, image});
         navigate("/");
     };
 
@@ -28,6 +29,13 @@ function CreatePost() {
                     <textarea onChange={(event) => {
                         setText(event.target.value);
                     }}/>
+                </div>
+                <div>
+                    <label >Image</label>
+                    <input type="text" onChange={(event) => {
+                        setImage(event.target.value);
+                    }}/>
+                    
                 </div>
                 <button onClick={createPost}>Submit Post</button>
             </div>

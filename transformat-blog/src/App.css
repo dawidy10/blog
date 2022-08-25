@@ -112,6 +112,7 @@ nav{
   font-size: 2vw;
   margin-left: 5vw;
   margin-top: 10vh;
+  color: var(--dark);
 }
 
 
@@ -166,12 +167,18 @@ nav{
 }
 
 .recent-post-title{
+  color: var(--dark);
   font-family: var(--text);
   letter-spacing: 5px;
   padding-top: 15px;
   text-transform: uppercase;
 }
-
+.recent-post-date{
+  font-family: var(--text);
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: var(--dark);
+}
 
 
 

@@ -59,7 +59,6 @@ function Home() {
 
     
     
-    
     return (
         <div>
             <div className="landing-section">
@@ -77,6 +76,7 @@ function Home() {
                             
                             <img className="recent-post-image" src={post.image} alt=""/>
                             <p className="recent-post-title">{post.title}</p>
+                            <p className="recent-post-date">{post.date}</p>
                             </div>
                     })}
                 </div>

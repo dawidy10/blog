@@ -36,7 +36,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/despre" element={<About />} />
         <Route path="/sustine" element={<Sustine />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/createpost" element={<CreatePost />} />
         <Route path="/articole/:id" element={<Articol />} />
       </Routes>

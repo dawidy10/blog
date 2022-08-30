@@ -65,7 +65,7 @@ function Blog(props){
     function handleinput(event){
         console.log(event.target.value)
         search = event.target.value.toLowerCase();
-        setsearchpostList(postList.filter(q => q.title.toLowerCase().includes(search)));
+        setsearchpostList(postList.filter(q => q.tags.toLowerCase().includes(search)));
         
         // console.log(searchpostList);
         // console.log(postList);

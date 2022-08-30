@@ -14,7 +14,7 @@ function Sustine() {
         <div className="support-page">
             <p className="page-title">Sustine proiectul transformat.</p>
             <div className="support-links">
-            <a href="" className="support-link">buymeacoffee.com/transformatblog</a>
+            <a href="https://www.buymeacoffee.com/transformat" className="support-link">buymeacoffee.com/transformat</a>
             <div className="support-link-wrap">
                 <img src={instagram} alt=""/>
                 <p className="support-link">@transformatblog</p>

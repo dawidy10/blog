@@ -356,6 +356,7 @@ nav{
   margin-top: 10vh;
   margin-bottom: 10vh;
   margin-left: 35vw;
+  font-family: var(--text);
 }
 .search-icon:focus{
   background-image: none;
@@ -399,4 +400,50 @@ nav{
     width: 80vw;
     margin-left: 10vw;
   }
+}
+
+.password-input{
+  border-radius: 10px;
+  height: 25px;
+  padding: 10px;
+  font-family: var(--text);
+  border: none;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  width: 40vw;
+  margin-left: 30vw;
+  margin-top: 10vh;
+}
+.password-input:focus{
+  outline: none;
+}
+.create-post-container{
+  text-align: center;
+}
+.create-post-title{
+  font-family: var(--title);
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.create-post-container label{
+  font-family: var(--text);
+  padding-right: 15px;
+}
+.create-post-container input, textarea{
+  margin-top: 5vh;
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  min-height: 30px;
+  width: 40vw;
+  padding: 10px;
+  font-family: var(--text);
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.create-post-container button{
+  margin-top: 5vh;
+  background-color: transparent;
+  color: var(--dark);
+  font-family: var(--text);
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
 }

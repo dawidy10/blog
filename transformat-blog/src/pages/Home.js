@@ -4,6 +4,7 @@ import { db } from '../firebase-config'
 import scroll from '../Scroll.svg'
 import footerlogo from '../footer-logo.svg'
 import instagram from '../instagram.svg'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 
 
@@ -75,7 +76,9 @@ function Home() {
                         return <div className="recent-post">
                             
                             <img className="recent-post-image" src={post.image} alt=""/>
-                            <p className="recent-post-title">{post.title}</p>
+                            <Link className="recent-post-title" to={"/articole/" + post.timestamp}>
+                            {post.title}
+                            </Link>
                             <p className="recent-post-date">{post.date}</p>
                             </div>
                     })}
